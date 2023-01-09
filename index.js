@@ -46,11 +46,17 @@ const testimonials = [
 let idx = 1
 
 function updateTestimonial() {
+  let colors = ["#8B1800", "#698400", "#008440", "#006567"]
+
+  let color = colors[Math.floor(Math.random() * colors.length)]
+
   const { name, position, photo, text } = testimonials[idx]
   userImage.src = photo
   role.innerHTML = position
   userName.innerHTML = name
   testimonial.innerHTML = text
+  testContainer.style.background = color
+  console.log(color)
 
   idx++
 
