@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     name: "Uzair Niazi",
-    position: "Web developer",
+    position: "Marketing",
     photo:
       "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     text: `        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, possimus
@@ -47,14 +47,14 @@ let idx = 1
 
 function updateTestimonial() {
   const { name, position, photo, text } = testimonials[idx]
-  userImage.scr = photo
+  userImage.src = photo
   role.innerHTML = position
-  userName = name
+  userName.innerHTML = name
   testimonial.innerHTML = text
 
   idx++
 
-  console.log( )
+  console.log(idx)
 
   if (idx > testimonials.length - 1) {
     idx = 0
